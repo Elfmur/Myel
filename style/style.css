@@ -1,0 +1,539 @@
+.page {
+    margin: auto;
+    background-color: #F1F1F1;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
+}
+.header {
+    width: 100%;
+    max-width: 1440px;
+    min-height: 40px;
+    margin: auto;
+}
+
+.callout {
+    font-family: "Roboto";
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #D8BF95;
+    min-height: 40px;
+}
+
+.callout__link {
+    text-decoration: none;
+    color: black;
+}
+
+.callout__link:hover {
+    color: #ffffff;
+}
+
+/* menu */
+
+.menu {
+    font-family: "Roboto";
+    text-transform: uppercase;
+    text-decoration: none;
+    min-height: 88px;
+    background-color: #F1F1F1;
+    width: 100%;
+    display: flex;
+
+}
+
+.menu__list {
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    flex-wrap: wrap;
+}
+
+.menu__list_collections {
+    padding-left: 261px;
+}
+
+.menu__list_logo {
+    padding-left: 202px;
+}
+
+.menu__list_about {
+    padding-left: 115px;
+}
+
+.menu__list_login {
+    padding-left: 228px;
+}
+
+.menu__list_lang {
+    padding-left: 27px;
+
+}
+
+.menu__list_num {
+    padding-left: 77px;
+}
+
+.menu__list_link {
+    text-decoration: none;
+    color: #000000;
+}
+
+.menu__list_link:hover {
+    color: #D8BF95;
+}
+
+.menu__list_lang_link {
+    text-transform: none;
+    z-index: 2;
+}
+
+/* js */
+
+/* .menu_col {
+    display: block;
+} */
+
+
+.collections__menu {
+    list-style-type: none;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    background-color: #d8bf959e;
+    margin: auto;
+    width: 130px;
+    line-height: 1.4;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transform: translate(336px, -31px);
+    z-index: 1;
+    position: absolute;
+    display: none;
+    border: #D8BF95 2px solid;
+
+}
+
+.block {
+    display: block;
+}
+
+.collections__menu_link {
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #000000;
+
+}
+
+.collections__menu_link:hover {
+    color: #ffffff;
+}
+
+
+/* popup */
+
+.popup__form {
+    display: flex;
+    flex-direction: column;
+    width: 277px;
+    z-index: 3;
+    position: absolute;
+    display: none;
+    border: solid 2px #D8BF95;
+    left: 70%;
+    top: 15%;
+    background-color: #d8bf959e;
+    padding: 15px;
+}
+
+.popup__form_email {
+  height: 20px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+.popup__form_pass {
+  height: 20px;
+  margin-bottom: 10px;
+}
+
+.popup__button {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.popup__show {
+    display: flex;
+}
+
+/* photo */
+
+.photo {
+    width: 100%;
+    max-width: 1440px;
+    display: grid;
+    grid-auto-flow: column;
+}
+.photo__image {
+    width: 100%;
+    max-width: 480px;
+    max-height: 630px;
+    z-index: 0;
+}
+
+.photo__image:hover {
+  opacity: 70%;
+  box-shadow: 0px 5px 5px #D8BF95
+}
+
+.photo__callout {
+    z-index: 1;
+    color: #FFFFFF;
+}
+
+.main {
+    font-family: "Roboto";
+    flex-grow: 1;
+}
+
+.main__section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.main__section_name {
+    font-family: "Roboto";
+    font-size: 64px;
+    width: 892px;
+    height: 256px;
+    margin-top: 116px;
+    margin-bottom: 0;
+    line-height: 64px;
+    font-weight: 400;
+}
+
+.main__section_shop{
+    margin-top: 125px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000000;
+    margin-right: 64px;
+}
+
+.main__info {
+    font-family: "Roboto";
+    font-size: 20px;
+    color: #000000;
+}
+
+.main__info_line {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__info_shop_line {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-right: 64.4px;
+}
+
+.main__shop {
+    margin-top: 153px;
+    margin-bottom: 60px;
+}
+
+.main__info_line_stroke {
+    text-decoration: none;
+    color: #000000;
+    margin-left: 68px;
+
+}
+
+.main__photo {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.main__photo_shop {
+    width: 341px;
+    height: 443px;
+}
+
+.main__price {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 182px;
+}
+
+.main__price_jw {
+    text-decoration: none;
+    color: #000000;
+}
+
+
+.photo__tshort {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.photo__tshort_stroke {
+   position: relative;
+   top: -81px;
+   left: 36px;
+   font-size: 14px;
+   width: 215px;
+}
+
+.main__info_line_1 {
+    display: flex;
+    align-items: center;
+    margin-right: 64.4px;
+    justify-content: space-between;
+}
+
+.main__info_shop_line_categories {
+    margin-bottom: 16px;
+    margin-top: 43px;
+}
+
+.categories__name {
+    font-size: 24px;
+    margin-top: 43px;
+    margin-bottom: 16px;
+    margin-left: 64px;
+}
+
+.categories__photo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 64px;
+    margin-right: 64px;
+    flex-wrap: wrap;
+}
+
+.categories__photo_rings {
+    position: relative;
+    top: -87px;
+    left: 84px;
+    color: #ffffff;
+    font-size: 33px;
+    margin: 0;
+}
+
+.categories__photo_earrings {
+    color: #ffffff;
+    position: relative;
+    bottom: -464px;
+    left: -429px;
+    font-size: 33px;
+}
+
+.dot {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 20px;
+}
+
+.material {
+    font-size: 43px;
+    line-height: 60px;
+    color: #000000;
+    width: 630px;
+}
+
+.lineart {
+display: flex;
+justify-content: center;
+gap: 211px;
+margin-top: 84px;
+flex-wrap: wrap;
+}
+
+.lineart_num {
+    font-size: 30px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 410px;
+    margin-top: 40px;
+    font-weight: 600;
+}
+
+.lineart__info {
+    font-size: 24px;
+    text-decoration: none;
+    display: flex;
+    gap: 20px;
+}
+
+.learn {
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000000;
+}
+
+.ring {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hand {
+    margin-top: 70px;
+    width: 100%;
+}
+
+.subscribe {
+    font-family: "Roboto";
+    color: #000000;
+    font-size: 46px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.subscribe__form_codes {
+    font-size: 18px;
+}
+
+.subscribe__input {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+}
+
+.subscribe__input_form {
+  border: inset;
+  margin-bottom: 50px;
+  width: 368px;
+  height: 29px;
+}
+
+.subscribe__input_button {
+  height: 32px;
+}
+
+.subscribe__input_line {
+  margin-top: 6px;
+}
+
+.footer__menu {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    margin-left: 64px;
+}
+
+.footer__menu_one {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 0;
+}
+
+.footer__menu_two {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+.footer__menu_three {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer__menu_four {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer__menu_five {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-right: 200px;
+}
+
+.check {
+    text-decoration: none;
+    color: #000000;
+}
+
+.check__name {
+    font-size: 18px;
+    padding-bottom: 10px;
+    font-weight: 400;
+
+}
+
+.social {
+    text-decoration: none;
+    color: #000000;
+    tab-size: 22px;
+    margin-left: 64px;
+    font-weight: 400;
+}
+
+.footer__list {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.footer__copy {
+    text-decoration: none;
+    color: #9B9B9B;
+}
+
+.footer__list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer__logo {
+    position: relative;
+    bottom: 9px;
+    left: 70px;
+}
+
+.footer__logo_i {
+    position: relative;
+    left: 105px;
+    top: -19px;
+}
+
+.footer__logo_in {
+    position: relative;
+    left: 90px;
+    top: -10px;
+}
+
+.footer__logo_ins {
+    position: relative;
+    left: 73px;
+    top: -7px;
+}
